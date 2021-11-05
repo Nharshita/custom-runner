@@ -2,7 +2,7 @@ name: Must run on custom runner
 on: push
 jobs:
   init:
-   runs-on: runner-vm
+   runs-on: self-hosted
    steps:
       - run: echo "hello"
       - run: echo $HOSTNAME
